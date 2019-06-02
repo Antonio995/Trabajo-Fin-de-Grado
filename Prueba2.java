@@ -6,16 +6,11 @@ import org.apache.spark.sql.SQLContext;
 import org.apache.spark.sql.SparkSession;
 import org.apache.spark.sql.catalog.Function;
 
-//import org.spark_project.guava.base.Function;
-//import org.apache.spark.sql.catalog.Function;
 import static org.apache.spark.sql.functions.count;
 import static org.apache.spark.sql.functions.sum;
 
 import java.util.ArrayList;
 
-import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
 import java.io.File;
 import java.util.HashMap;
 import java.lang.reflect.Array;
@@ -31,7 +26,6 @@ import org.apache.spark.api.java.function.Function2;
 
 import scala.Tuple2;
 
-//import org.apache.spark.sql.*;
 
 public class Prueba2 {
 

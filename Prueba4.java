@@ -15,17 +15,11 @@ import com.leanxcale.kivi.tuple.Tuple;
 import com.leanxcale.kivi.tuple.TupleKey;
 
 import scala.Tuple2;
-
-import javax.transaction.TransactionRequiredException;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function2;
-import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaPairRDD;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
 
 import static com.leanxcale.kivi.query.aggregation.Aggregations.avg;
 import static com.leanxcale.kivi.query.expression.Constants.integer;
@@ -42,9 +36,9 @@ import static com.leanxcale.kivi.query.projection.Projections.exclude;
 import static com.leanxcale.kivi.query.projection.Projections.include;
 import static java.util.Collections.emptyList;
 
+
 import java.io.IOException;
 import java.sql.Date;
-import java.util.regex.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -54,19 +48,8 @@ import java.util.ListIterator;
 import java.util.Map;
 
 import com.leanxcale.exception.LeanxcaleException;
-import com.leanxcale.kivi.database.Database;
 import com.leanxcale.kivi.database.Field;
-import com.leanxcale.kivi.database.Index;
-import com.leanxcale.kivi.database.Table;
 import com.leanxcale.kivi.database.TableModel;
-import com.leanxcale.kivi.database.Type;
-import com.leanxcale.kivi.query.TupleIterable;
-import com.leanxcale.kivi.session.Connection;
-import com.leanxcale.kivi.session.ConnectionFactory;
-import com.leanxcale.kivi.session.Credentials;
-import com.leanxcale.kivi.session.Settings;
-import com.leanxcale.kivi.tuple.Tuple;
-import com.leanxcale.kivi.tuple.TupleKey;
 import javax.transaction.TransactionRequiredException;
 
 
